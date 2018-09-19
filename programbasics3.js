@@ -2,8 +2,8 @@
 
 var x = 12;
 
-var y = x/2;
-var w = Math.floor(x/2);
+let y = x/2;
+let w = Math.floor(x/2);
 
 if (  y==w ) {
     console.log ('even'+ x);
