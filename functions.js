@@ -136,6 +136,7 @@
 
 //         console.log(index, index2)
 
+
 //     console.log(allMyRecords[index][index2])  
 //      }
 
@@ -143,14 +144,74 @@
 //  }
 // // OPDRACHT 3
 
-const lapRounds = [2.99, 3.00, 3.01, 4.01, 2.79, 2.88, 3.10, 4.12];
+// const lapRounds = [2.99, 3.00, 3.01, 4.01, 2.79, 2.88, 3.10, 4.12];
 
 
 
-    let y = lapRounds.filter(function(num) {
-        // Calls all the numbers under 4
-        return num < 4;
-    })
-//het werkt fijner omdat het veel minder typewerk is.
+//     let y = lapRounds.filter(function(num) {
+//         // Calls all the numbers under 4
+//         return num < 4;
+//     })
+// //het werkt fijner omdat het veel minder typewerk is.
 
-console.log(y);
+// console.log(y);
+let me = {
+    "name": "Anissa",
+    "age": 22,
+    "Previous_Diploma": "21+",
+    favoriteVehicle: {
+        name: "auto",
+        amountOfWheels: 4
+    },
+    logfamilyNames: function() {
+        me.familyNames.forEach(function(element){
+        console.log(element)})
+    },
+
+    familyNames: [
+        "Piet",
+        "Nel",
+        "Petra",
+        "Henk",
+        "Ad"
+
+    ]
+
+
+};
+
+console.log(me);
+me.currentstudy = "HBO-ICT"
+me.hobby = "Lezen"
+me.eyecolour = "Black"
+me.favoritecolour = "Black"
+me.brothers = 4
+me.weight = 48
+me.story = "its just a test"
+me.lastName = "Boufrahi"
+
+console.log(me);
+
+
+// console.log(`Mijn favoriete vervoersmiddel is de ${me.favoriteVehicle.name} en die heeft ${me.favoriteVehicle.amountOfWheels} wielen.`);
+
+
+for (let index = 0; index < me.familyNames.length; index++) {
+    const element = me.familyNames[index];
+
+
+};
+
+console.log(element);
+
+let logFavoriteVehicle = function() {
+    console.log(`Mijn favoriete vervoersmiddel is de ${me.favoriteVehicle.name} en die heeft ${me.favoriteVehicle.amountOfWheels} wielen.`);
+};
+
+let logfamilyNames = function()
+    me.familyNames.forEach(function(element) {
+    console.log(element)
+});
+
+me.logFavoriteVehicle()
+me.logfamilyNames()
